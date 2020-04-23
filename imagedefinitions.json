@@ -1,0 +1,21 @@
+{
+  "taskDefinition": {
+    "family": "app-nodejs",
+    "containerDefinitions": [
+      {
+        "name": "app-nodejs",
+        "image": "101390916346.dkr.ecr.eu-west-3.amazonaws.com/app-nodejs:latest",
+        "cpu": 100,
+        "portMappings": [
+          {
+            "protocol": "tcp",
+            "containerPort": 80,
+            "hostPort": 80
+          }
+        ],
+        "memory": 128,
+        "essential": true
+      }
+    ]
+  }
+}
